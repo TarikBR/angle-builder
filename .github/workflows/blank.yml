@@ -63,5 +63,11 @@ jobs:
         with:
            name: angle-aar
            path: angle.aar
-
-
+      - name: Release "Angle Lib"
+        uses: softprops/action-gh-release@v1
+        with:
+          body: Angle Lib
+          tag_name: github_run
+          name: Action Release
+          files: |
+            angle.aar
